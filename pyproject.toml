@@ -3,7 +3,7 @@ name = "2025-2-dl"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 dependencies = [
     "ipykernel>=6.31.0",
     "jupyter>=1.1.1",
@@ -12,6 +12,22 @@ dependencies = [
     "numpy>=2.0.2",
     "pandas>=2.3.3",
     "tqdm>=4.67.1",
-    "streamlit>=1.28.0",
     "scikit-learn>=1.6.1",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "gymnasium>=1.2.2",
+    "seaborn>=0.13.2",
 ]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu128", marker = "sys_platform == 'win32' or sys_platform == 'linux'" },
+]
+torchvision = [
+    { index = "pytorch-cu128", marker = "sys_platform == 'win32' or sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
