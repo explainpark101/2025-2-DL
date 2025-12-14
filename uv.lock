@@ -30,6 +30,7 @@ dependencies = [
     { name = "torchvision", version = "0.24.1", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
     { name = "torchvision", version = "0.24.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "(python_full_version >= '3.15' and sys_platform == 'linux') or (platform_machine != 'aarch64' and sys_platform == 'linux') or (platform_python_implementation != 'CPython' and sys_platform == 'linux') or sys_platform == 'win32'" },
     { name = "tqdm" },
+    { name = "ubconvert" },
 ]
 
 [package.metadata]
@@ -48,6 +49,7 @@ requires-dist = [
     { name = "torchvision", marker = "sys_platform != 'linux' and sys_platform != 'win32'", specifier = ">=0.24.1" },
     { name = "torchvision", marker = "sys_platform == 'linux' or sys_platform == 'win32'", specifier = ">=0.24.1", index = "https://download.pytorch.org/whl/cu128" },
     { name = "tqdm", specifier = ">=4.67.1" },
+    { name = "ubconvert", specifier = ">=4.2.6" },
 ]
 
 [[package]]
@@ -2340,6 +2342,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/95/32/1a225d6164441be760d75c2c42e2780dc0873fe382da3e98a2e1e48361e5/tzdata-2025.2.tar.gz", hash = "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9", size = 196380, upload-time = "2025-03-23T13:54:43.652Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5c/23/c7abc0ca0a1526a0774eca151daeb8de62ec457e77262b66b359c3c7679e/tzdata-2025.2-py2.py3-none-any.whl", hash = "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8", size = 347839, upload-time = "2025-03-23T13:54:41.845Z" },
+]
+
+[[package]]
+name = "ubconvert"
+version = "4.2.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/4d/d1/666581e9e4d0e02a8ce66147323ddbf14ce07554234c13047d7a0e594572/ubConvert-4.2.6.tar.gz", hash = "sha256:6f8b2fe2b3f664e9c8dbffa9f40445e23ece5cf5f2c269d74150b21dc7433190", size = 2736, upload-time = "2022-01-22T00:17:04.2Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/35/c3/287b1d4755aec6f74325ff8425dc4e5b0b873c060bf7c5abd20072ed4a21/ubConvert-4.2.6-py3-none-any.whl", hash = "sha256:34ed5c2499d24bc40b201038de956ba943d3ce0d8f283261415f82d5376ff8db", size = 2929, upload-time = "2022-01-22T00:17:00.896Z" },
 ]
 
 [[package]]

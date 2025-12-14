@@ -17,6 +17,7 @@ dependencies = [
     "torchvision>=0.24.1",
     "gymnasium>=1.2.2",
     "seaborn>=0.13.2",
+    "ubconvert>=4.2.6",
 ]
 
 [tool.uv.sources]
